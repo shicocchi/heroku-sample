@@ -1,0 +1,35 @@
+<ion-menu [content]="content">
+
+  <img src="images/logo.png" style="width: 100px;margin-left:84px"/>
+
+  <ion-content>
+    <ion-list>
+      <ion-list-header>物件を探す</ion-list-header>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon item-left name="{{p.icon}}"></ion-icon>
+        {{p.title}}
+      </button>
+      <ion-list-header>住宅ローン</ion-list-header>
+      <button menuClose ion-item >
+        <ion-icon item-left name="checkbox"></ion-icon>
+        事前承認を取得
+      </button>
+      <button menuClose ion-item >
+        <ion-icon item-left name="cart"></ion-icon>
+        店舗レート
+      </button>
+      <ion-list-header>アカウント</ion-list-header>
+      <button menuClose ion-item >
+        <ion-icon item-left name="person"></ion-icon>
+        プロファイル
+      </button>
+      <button menuClose ion-item >
+        <ion-icon item-left name="settings"></ion-icon>
+        設定
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
