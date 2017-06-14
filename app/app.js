@@ -33,7 +33,7 @@ class MyApp {
             {title: 'ようこそ！', component: WelcomePage, icon: "bookmark"},
             {title: '物件を探す', component: PropertyListPage, icon: "home"},
             {title: '担当者を探す', component: BrokerListPage, icon: "people"},
-            {title: 'お気に入り', component: FavoriteListPage, icon: "star"}
+            {title: 'お気に入り！！', component: FavoriteListPage, icon: "star"}
         ];
 
         this.rootPage = WelcomePage;
